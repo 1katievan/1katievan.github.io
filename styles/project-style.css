@@ -1,0 +1,59 @@
+.fade-from-black {
+    height: 120px;
+    background-image: linear-gradient(black, #202020);
+}
+
+.fade-to-black {
+    height: 120px;
+    background-image: linear-gradient( #202020, black );
+}
+
+.darkgrey-bg {
+    background-color: #202020;
+}
+
+.transparent-bg {
+    background-color: transparent;
+}
+
+.gradual-page-fade {
+    padding: 40px 30px;
+    background-image: linear-gradient(transparent, rgba(255,255,255,0.1), rgba(255,255,255,0.1), rgba(255,255,255,0.1), transparent);
+    color: white;
+}
+
+.light-font {
+    font-weight: 100;
+}
+
+h5 {
+    margin-top: 25px;
+}
+
+h5.mt-0 {
+    margin-top: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+.media-img {
+    height: 100px;
+    width: 100px;
+}
+
+.media {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.media-body {
+    background-color: transparent;
+    margin-top: 7px;
+}
+
+.related-media {
+    position: relative;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
