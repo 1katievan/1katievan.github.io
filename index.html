@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <title>Katie Van Portfolio</title>
+    </head>
+
+    <body>
+        <!-- web header -->
+
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="index.html">KV Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse transparent-bg" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="bd-example" style="position: relative">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000" data-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="max-height: 500px; position: relative;">
+                            <img src="images/PortfolioCoverImage1.jpg" class="d-block w-100 animateImage" alt="..." style="top: -25%;">
+                        </div>
+                        <div class="carousel-item"  style="max-height: 500px">
+                            <img src="images/LowResSketch.jpg" class="d-block w-100 animateImage" alt="...">
+                        </div>
+                        <div class="carousel-item"  style="max-height: 500px">
+                            <img src="images/PortfolioCoverImage3.jpg" class="d-block w-100 animateImage" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-caption d-none d-md-block tranparentDark" style="bottom: 40%">
+                    <h5 style="margin-top: 15px; margin-left: 10px; margin-right: 10px; font-size: 1.7rem;">I love to create, whether it's through paint strokes, pixels, or code.</h5>
+                    <p>- Katie Van (Artist, Designer, and Programmer)</p>
+                </div>
+            </div>
+            <div style="height: 15px; background-color: black"></div>
+            <div style="height: 120px; background-image: linear-gradient(black, #252525 )"></div>
+    
+            <!-- portfolio filters -->
+            <div class="container" style="margin-top: -55px; background-color: transparent">
+                <div style="text-align: center; background-color: transparent">
+                    <p class="filters">CURRENTLY SHOWING PROJECTS WITH:</p>
+                    <button id="illustration" type="button" onclick="selectFilter(this)" class="btn btn-sm btn-outline-primary btn-outline-blue btn-outline-disabled">Illustration +</button>
+                    <button id="graphic-design" type="button" onclick="selectFilter(this)" class="btn btn-sm btn-outline-primary btn-outline-green btn-outline-disabled">Graphic Design +</button>
+                    <button id="video-editing" type="button" onclick="selectFilter(this)" class="btn btn-sm btn-outline-primary btn-outline-pink btn-outline-disabled">Video Editing +</button>
+                    <button id="motion-graphics" type="button" onclick="selectFilter(this)" class="btn btn-sm btn-outline-primary btn-outline-orange btn-outline-disabled">Motion Graphics +</button>
+                    <button id="game-dev" type="button" onclick="selectFilter(this)" class="btn btn-sm btn-outline-primary btn-outline-cyan btn-outline-disabled">Game Dev +</button>
+                    <button id="3d-graphics" type="button" onclick="selectFilter(this)" class="btn btn-sm btn-outline-primary btn-outline-red btn-outline-disabled">3D Graphics +</button>
+                    <button id="programming" type="button" onclick="selectFilter(this)" class="btn btn-sm btn-outline-primary btn-outline-purple btn-outline-disabled">Programming +</button>
+                    <button id="web-dev" type="button" onclick="selectFilter(this)" class="btn btn-sm btn-outline-primary btn-outline-yellow btn-outline-disabled">Web Dev +</button>
+                    <button id="ui-design" type="button" onclick="selectFilter(this)" class="btn btn-sm btn-outline-primary btn-outline-peach btn-outline-disabled">UI Design +</button>
+                    <hr class="my-4" style="margin-bottom: 40px!important;">
+                </div>
+        
+                <!-- show portfolio results-->
+                <div class="row">
+
+                    <div id="no-results" class="cold-md-12 col-lg-12" style="text-align: center; color: #ccc; margin-top: 70px; margin-bottom: 80px; display: none;">
+                        <p>Try selecting one or more of the categories above to explore my projects!</p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration" style="position: relative;">
+                        <img src="images/SunsetSketchThumbnail.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Sunset Sketch</h5>
+                            <p class="portfolio-object-desc">A digital painting that resulted from an experimental painting study.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration" style="position: relative;">
+                        <img src="images/DesertOasisThumbnail.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Oasis | Sci-fi/Fantasy Concept Art</h5>
+                            <p class="portfolio-object-desc">A concept art study sparked by the concepts of 'desert oasis' and 'ww2 submarine'.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration" style="position: relative;">
+                        <img src="images/FemaleArmourConceptThumbnail.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Sci-fi Female Armor Suit Concept</h5>
+                            <p class="portfolio-object-desc">A sci-fi concept illustration for an armor suit designed for exploration of an alien planet.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="web-dev, graphic-design, ui-design" style="position: relative;">
+                        <img src="images/KatarStudiosWebsiteThumbnail.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Indie Game Website - Katar Studios</h5>
+                            <p class="portfolio-object-desc">A website designed for game landing pages, collecting emails, and posting blog posts.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration" style="position: relative;">
+                        <img src="images/KatarStudiosPromoArtThumbnail.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Promo Art for Katar Studios</h5>
+                            <p class="portfolio-object-desc">Promo art to be displayed prominently on the Katar Studios webpage.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration" style="position: relative;">
+                        <img src="images/illustration-class/PlanetConceptThumbnail.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Sci-fi Planet Concept Art</h5>
+                            <p class="portfolio-object-desc">Concept illustrations for a sci-fi planetary system with fascinating alien landscapes.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration" style="position: relative;">
+                        <img src="images/illustration-class/icelandThumbnail-notCentered.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Sci-fi Ice Base Concept Art</h5>
+                            <p class="portfolio-object-desc">Millions of miles away earth, a group drills into the ice for unknown reasons...</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration" style="position: relative;">
+                        <img src="images/illustration-class/landscapeThumbnails.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Alien Landscapes Concept Art</h5>
+                            <p class="portfolio-object-desc">Fascinating alien landscapes similar to earth, but still so different.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration" style="position: relative;">
+                        <img src="images/EnvironmentSketchIndieGameConcept.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Indie Game Environment Sketches</h5>
+                            <p class="portfolio-object-desc">Concept art for a game taking place mostly in the character's house.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration" style="position: relative;">
+                        <img src="images/industrialJungle/IndustrialJungleConceptArt.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Industrial Jungle Concept Art Study</h5>
+                            <p class="portfolio-object-desc">Art inspired by an xBox next to a house plant.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration, video-editing, motion-graphics" style="position: relative;">
+                        <img src="images/HackerHoodConceptArt.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Short Illustrated Game Trailer Video</h5>
+                            <p class="portfolio-object-desc">This short video was a rushed project to make a school presentation even cooler. It worked!</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration, graphic-design" style="position: relative;">
+                        <img src="images/SmashGraphicPosterDesigns.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Graphic Poster Designs (Smash Bros Art)</h5>
+                            <p class="portfolio-object-desc">Graphic posters featuring the most popular super smash bros characters for a gaming event.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration, graphic-design" style="position: relative;">
+                        <img src="images/BookCoverThumbnail.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Fantasy Book Cover Illustration</h5>
+                            <p class="portfolio-object-desc">A book cover illustration featuring custom typography and a grand view of a ruined city. Did it for fun.</p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 bottom-spacing portfolio-object hidden" data-tags="illustration, graphic-design" style="position: relative;">
+                        <img src="images/PosterSpaceShipMinimalistic.jpg" class="projectImage" alt="...">
+                        <a href="projects/project-template.html" style="display: block" class="carousel-caption d-none d-md-block projectInfo deco-none">
+                            <h6 class="projectTitle">Minimalistic Space Poster</h5>
+                            <p class="portfolio-object-desc">A minimalistic styled poster with retro textures created to advertise my client's gaming club.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="copyright py-4 text-center text-white" style="background-color: black;">
+            <div class="container" style="background-color: black;">
+                <small>Copyright © Katie Van 2019</small>
+            </div>
+        </section>
+
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                <i class="fas fa-star"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="images/PortfolioCoverImage.jpg" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
