@@ -61,3 +61,11 @@ img {
     background-color: transparent;
     margin-bottom: 15px;
 }
+
+a {
+    color: #3bcf6f;
+}
+
+a:hover {
+    color: #2bbe5e;
+}
