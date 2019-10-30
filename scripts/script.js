@@ -114,6 +114,12 @@ function filterResults(tagList) {
 
 function loadUrlHash() {
     var urlHash = window.location.hash;
+    
+    //if empty, then populate it with all the tags.
+    if (urlHash.length = 0) {
+        window.location.hash = "#illustration-graphic-design-video-editing-motion-graphics-game-dev-3d-graphics-programming-web-dev-ui-design";
+        urlHash = window.location.hash;
+    }
 
     var tagList = ['illustration', 'graphic-design', 'video-editing', 'motion-graphics', 'game-dev', '3d-graphics', 'programming', 'web-dev', 'ui-design'];
     for (var i = 0; i < tagList.length; i++) {
