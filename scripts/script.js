@@ -118,7 +118,7 @@ function loadUrlHash() {
     console.log(urlHash);
     
     //if empty, then populate it with all the tags.
-    if (urlHash.length = 0) {
+    if (urlHash.length == 0) {
         window.location.hash = "#illustration-graphic-design-video-editing-motion-graphics-game-dev-3d-graphics-programming-web-dev-ui-design";
         urlHash = window.location.hash;
     }
