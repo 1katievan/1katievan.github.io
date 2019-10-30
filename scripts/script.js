@@ -115,6 +115,8 @@ function filterResults(tagList) {
 function loadUrlHash() {
     var urlHash = window.location.hash;
     
+    console.log(urlHash);
+    
     //if empty, then populate it with all the tags.
     if (urlHash.length = 0) {
         window.location.hash = "#illustration-graphic-design-video-editing-motion-graphics-game-dev-3d-graphics-programming-web-dev-ui-design";
